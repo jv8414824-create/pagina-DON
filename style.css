@@ -1,0 +1,137 @@
+
+body {
+background-color: #cbf1e4;
+color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
+
+/* Container Principal */
+.app {
+background: #ffffff;
+width: 100%;
+max-width: 450px;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.app h1 {
+font-size: 1.8rem;
+text-transform: capitalize;
+color: #2c3e50;
+margin-bottom: 20px;
+text-align: center;
+}
+
+/* Área de Entrada (Input + Botão) */
+.entrada {
+display: flex;
+gap: 10px;
+margin-bottom: 12px;
+}
+
+.entrada input {
+flex: 1;
+padding: 12px 15px;
+border: 2px solid #e0e0e0;
+border-radius: 8px;
+font-size: 1rem;
+outline: none;
+transition: border-color 0.2s ease;
+}
+
+.entrada input:focus {
+border-color: #4a90e2;
+}
+
+.entrada button {
+padding: 12px 20px;
+background-color: #4a90e2;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+text-transform: capitalize;
+transition: background-color 0.2s ease;
+}
+
+.entrada button:hover {
+background-color: #357abd;
+}
+
+/* Mensagem de Erro/Aviso */
+.mensagem {
+color: #e74c3c;
+font-size: 0.875rem;
+min-height: 20px;
+margin-bottom: 15px;
+}
+
+/* Lista de Tarefas */
+.lista {
+list-style: none;
+margin-bottom: 20px;
+max-height: 300px;
+overflow-y: auto;
+}
+
+.lista li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 15px;
+background-color: #f9f9f9;
+border: 1px solid #eee;
+border-radius: 8px;
+margin-bottom: 8px;
+transition: background-color 0.2s ease;
+}
+
+.lista li:hover {
+background-color: #f1f1f1;
+}
+
+.lista li span {
+cursor: pointer;
+flex: 1;
+word-break: break-word;
+margin-right: 10px;
+font-size: 1rem;
+}
+
+/* Tarefa Concluída */
+.lista li.concluida span {
+text-decoration: line-through;
+color: #888;
+}
+
+/* Botão Remover */
+.lista li .remover {
+background-color: #ff4d4d;
+color: white;
+border: none;
+padding: 6px 12px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 0.85rem;
+transition: background-color 0.2s ease;
+}
+
+.lista li .remover:hover {
+background-color: #cc0000;
+}
+
+/* Contador */
+.contador {
+font-size: 0.9rem;
+color: #666;
+text-align: center;
+border-top: 1px solid #eee;
+padding-top: 15px;
+}
